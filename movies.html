@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Dashboard - Brand</title>
+    <title>Table - Brand</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
@@ -127,7 +127,100 @@
                         </ul>
                     </div>
                 </nav>
-                <div style="text-align: center;"><img src="assets/img/clipboard-image-7.png"></div>
+                <div class="container-fluid">
+                    <h3 class="text-dark mb-4">Movies</h3><a class="btn btn-primary btn-sm d-none d-sm-inline-block" role="button" href="#" style="text-align: right;">&nbsp;Generate Report</a>
+                    <div class="card shadow">
+                        <div class="card-header py-3">
+                            <p class="text-primary m-0 fw-bold">movie Info</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6 text-nowrap">
+                                    <div id="dataTable_length" class="dataTables_length" aria-controls="dataTable"></div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="text-md-end dataTables_filter" id="dataTable_filter"><label class="form-label"><input type="search" class="form-control form-control-sm" aria-controls="dataTable" placeholder="Search"></label></div>
+                                </div>
+                            </div>
+                            <div class="table-responsive table mt-2" id="dataTable" role="grid" aria-describedby="dataTable_info">
+                                <table class="table my-0" id="dataTable">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Director</th>
+                                            <th>Duration</th>
+                                            <th>Minimum age</th>
+                                            <th>IMDb</th>
+                                            <th>Genre</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Tokyo</td>
+                                            <td><img class="rounded-circle me-2" width="30" height="30" src="assets/img/avatars/avatar1.jpeg">Airi Satou</td>
+                                            <td>150 min</td>
+                                            <td>18</td>
+                                            <td>2,5</td>
+                                            <td>Comedy</td>
+                                        </tr>
+                                        <tr>
+                                            <td>London</td>
+                                            <td><img class="rounded-circle me-2" width="30" height="30" src="assets/img/avatars/avatar2.jpeg">Angelica Ramos</td>
+                                            <td>200 min</td>
+                                            <td>15</td>
+                                            <td>7<br></td>
+                                            <td>Action</td>
+                                        </tr>
+                                        <tr>
+                                            <td>San Francisco</td>
+                                            <td><img class="rounded-circle me-2" width="30" height="30" src="assets/img/avatars/avatar3.jpeg">Ashton Cox</td>
+                                            <td>175 min</td>
+                                            <td>18</td>
+                                            <td>4<br></td>
+                                            <td>Comedy</td>
+                                        </tr>
+                                        <tr></tr>
+                                        <tr>
+                                            <td>New York</td>
+                                            <td><img class="rounded-circle me-2" width="30" height="30" src="assets/img/avatars/avatar1.jpeg">Brielle Williamson</td>
+                                            <td>210 min</td>
+                                            <td>12</td>
+                                            <td>3<br></td>
+                                            <td>Comedy</td>
+                                        </tr>
+                                        <tr></tr>
+                                        <tr></tr>
+                                        <tr>
+                                            <td>Edinburgh</td>
+                                            <td><img class="rounded-circle me-2" width="30" height="30" src="assets/img/avatars/avatar5.jpeg">Cedric Kelly</td>
+                                            <td>100 min</td>
+                                            <td>18</td>
+                                            <td>2<br></td>
+                                            <td>Action</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 align-self-center">
+                                    <p id="dataTable_info" class="dataTables_info" role="status" aria-live="polite"></p>
+                                </div>
+                                <div class="col-md-6">
+                                    <nav class="d-lg-flex justify-content-lg-end dataTables_paginate paging_simple_numbers">
+                                        <ul class="pagination"></ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <footer class="bg-white sticky-footer">
                 <div class="container my-auto">
